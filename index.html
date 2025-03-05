@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Gioco</title>
+        <link rel="stylesheet" href="sito.css">
+    </head>
+
+    <body>
+        <section>
+            <table>
+                <tr>
+                    <td class="num" id="1"></td>
+                    <td class="num" id="2"></td>
+                    <td class="num" id="3"></td>
+                    <td class="num" id="4"></td>
+                </tr>
+
+                <tr>
+                    <td class="num" id="5"></td>
+                    <td class="num" id="6"></td>
+                    <td class="num" id="7"></td>
+                    <td class="num" id="8"></td>
+                </tr>
+
+                <tr>
+                    <td class="num" id="9"></td>
+                    <td class="num" id="10"></td>
+                    <td class="num" id="11"></td>
+                    <td class="num" id="12"></td>
+                </tr>
+
+                <tr>
+                    <td class="num" id="13"></td>
+                    <td class="num" id="14"></td>
+                    <td class="num" id="15"></td>
+                    <td class="num" id="16"></td>
+                </tr>
+
+                <tr>
+                    <td class="num" id="17"></td>
+                    <td class="num" id="18"></td>
+                    <td class="num" id="19"></td>
+                    <td class="num" id="20"></td>
+                </tr>
+
+                
+            </table>
+            <br><br>
+
+            <table>
+                <tr>
+                    <td><button class="tastiera" onclick=inserisci(0)>0</button></td>
+                    <td><button class="tastiera" onclick=inserisci(1)>1</button></td>
+                    <td><button class="tastiera" onclick=inserisci(2)>2</button></td>
+                    <td><button class="tastiera" onclick=inserisci(3)>3</button></td>
+                    <td><button class="tastiera" onclick=inserisci(4)>4</button></td>
+                    <td><button class="canc" onclick=cancella()>Cancella</button></td>
+                </tr>
+                
+                <tr>
+                    <td><button class="tastiera" onclick=inserisci(5)>5</button></td>
+                    <td><button class="tastiera" onclick=inserisci(6)>6</button></td>
+                    <td><button class="tastiera" onclick=inserisci(7)>7</button></td>
+                    <td><button class="tastiera" onclick=inserisci(8)>8</button></td>
+                    <td><button class="tastiera" onclick=inserisci(9)>9</button></td>
+                    <td><button onclick=elabora() class="conferma">Conferma</button></td>
+                </tr>
+            </table>
+            
+            <p id="Risultato"></p>
+
+        </section>
+
+        <script src="codice.js"></script>
+    </body>
+</html>
