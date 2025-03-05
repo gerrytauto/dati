@@ -1,0 +1,59 @@
+section{
+    text-align: center;
+}
+
+body{
+    background-color: black;
+}
+
+tr, td{
+    border: 3px, solid, grey;
+}
+
+.num{
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+}
+
+.conferma{
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+}
+
+.tastiera{
+    background-color: grey;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+}
+
+.canc{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+}
+
+#giusto{
+    background-color: green;
+}
+
+#quasi{
+    background-color: orange;
+}
+
+p{
+    color:white;
+}
