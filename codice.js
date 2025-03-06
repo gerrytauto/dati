@@ -1,7 +1,7 @@
 var id=1;
 var riga=0;
 var numeri_indovinati=0;
-var array=[Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10), Math.floor(Math.random() * 10)];
+var sequenza=genera_numero();
 
 function inserisci(num){
     document.getElementById(id).innerHTML=num;
@@ -38,7 +38,7 @@ function elabora(){
 
 function sta_dentro(n){
     for(var i=0; i<4; i++){
-        if(n.innerHTML==array[i]){
+        if(n.innerHTML==sequenza[i]){
             return true;
         }
     }
@@ -48,7 +48,7 @@ function sta_dentro(n){
 
 function posizione(n){
     for(var i=0; i<4; i++){
-        if(n.innerHTML==array[i] && n.id-(riga*4)==i+1){
+        if(n.innerHTML==sequenza[i] && n.id-(riga*4)==i+1){
             return true;
         }
     }
@@ -70,4 +70,18 @@ function stampaRisultato(){
         
     }
     
+}
+
+function genera_numero(){
+    var array=[];
+    var a;
+    
+    while(array.length<4){
+        a=Math.floor(Math.random() * 10);
+        if(array.includes(a)==false){
+            array.push(a);
+        }
+    }
+
+    return array;
 }
