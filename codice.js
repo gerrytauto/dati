@@ -27,20 +27,13 @@ function elabora(){
             }
         }
         riga+=1;
+        stampaRisultato();
     }
     else{
-        prompt("devi fare una riga alla volta!!");
+        window.alert("Devi fare una riga alla volta!!");
     }
 
-    if(riga==5){
-        guess=array[0] + " " + array[1] + " " + array[2] + " " + array[3];
-        if(numeri_indovinati==4){
-            document.getElementById("Risultato").innerHTML="Esatto!!";
-        }
-        else{
-            document.getElementById("Risultato").innerHTML="Mi dispiace il numero era " + guess;
-        }
-    }
+    
 }
 
 function sta_dentro(n){
@@ -61,4 +54,20 @@ function posizione(n){
     }
 
     return false;
+}
+
+function stampaRisultato(){
+
+    if(numeri_indovinati==4){
+        document.getElementById("Risultato").innerHTML="Esatto!!";
+        document.getElementById("Rigioca").hidden=false;
+    }
+
+    else if(riga==5){
+        guess=array[0] + " " + array[1] + " " + array[2] + " " + array[3];
+        document.getElementById("Risultato").innerHTML="Mi dispiace, il numero era " + guess;
+        document.getElementById("Rigioca").hidden=false;
+        
+    }
+    
 }
