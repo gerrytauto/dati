@@ -9,8 +9,10 @@ function inserisci(num){
 }
 
 function cancella(){
-    id-=1
-    document.getElementById(id).innerHTML="";
+    if(id!=0+(4*riga){
+        id-=1
+        document.getElementById(id).innerHTML="";
+    }
 }
 
 function elabora(){
