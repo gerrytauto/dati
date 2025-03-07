@@ -9,7 +9,7 @@ function inserisci(num){
 }
 
 function cancella(){
-    if(id!=0+(4*riga)){
+    if(id!=1+(4*riga)){
         id-=1
         document.getElementById(id).innerHTML="";
     }
