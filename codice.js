@@ -65,7 +65,7 @@ function stampaRisultato(){
         document.getElementById("Rigioca").hidden=false;
     }
 
-    else if(riga==5){
+    else if(riga==4){
         guess=array[0] + " " + array[1] + " " + array[2] + " " + array[3];
         document.getElementById("Risultato").innerHTML="Mi dispiace, il numero era " + guess;
         document.getElementById("Rigioca").hidden=false;
