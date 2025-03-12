@@ -2,6 +2,12 @@ section{
     text-align: center;
 }
 
+.griglia, .tast{
+    margin: auto;
+    width: 25%;
+}
+
+
 body{
     background-color: black;
 }
@@ -54,7 +60,34 @@ tr, td{
     background-color: orange;
 }
 
-p{
+p, pre{
     font-size: large;
     color:white;
 }
+
+header{
+    text-align: center;
+    font-size: 200%;
+    color: white;
+}
+
+h1{
+    color:white;
+    font-size: larger;
+    text-align: center;
+}
+
+.link{
+    background-color: purple;
+    color: white;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: larger;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
