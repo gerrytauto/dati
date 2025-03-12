@@ -63,14 +63,16 @@ function stampaRisultato(){
     if(numeri_indovinati==4){
         document.getElementById("Risultato").innerHTML="Esatto!!";
         document.getElementById("Rigioca").hidden=false;
+        disabilita_tastiera();
     }
 
-    else if(riga==4){
-        guess=array[0] + " " + array[1] + " " + array[2] + " " + array[3];
+    else if(riga==5){
+        guess=sequenza[0] + " " + sequenza[1] + " " + sequenza[2] + " " + sequenza[3];
         document.getElementById("Risultato").innerHTML="Mi dispiace, il numero era " + guess;
         document.getElementById("Rigioca").hidden=false;
         
     }
+
     
 }
 
@@ -86,4 +88,10 @@ function genera_numero(){
     }
 
     return array;
+}
+
+function disabilita_tastiera(){
+    for(var i=0; i<10; i++){
+        document.getElementsByClassName("tastiera")[i].disabled=true;        
+    }
 }
