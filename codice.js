@@ -70,7 +70,7 @@ function stampaRisultato(){
         guess=sequenza[0] + " " + sequenza[1] + " " + sequenza[2] + " " + sequenza[3];
         document.getElementById("Risultato").innerHTML="Mi dispiace, il numero era " + guess;
         document.getElementById("Rigioca").hidden=false;
-        
+        disabilita_tastiera();
     }
 
     
@@ -94,4 +94,8 @@ function disabilita_tastiera(){
     for(var i=0; i<10; i++){
         document.getElementsByClassName("tastiera")[i].disabled=true;        
     }
+
+    document.getElementsByClassName("canc")[0].disabled=true;  
+    document.getElementsByClassName("conferma")[0].disabled=true;  
+    
 }
